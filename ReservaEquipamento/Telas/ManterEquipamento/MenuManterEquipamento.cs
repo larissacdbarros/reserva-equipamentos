@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ReservaEquipamento.Telas.ManterProfessor
+namespace ReservaEquipamento.Telas.ManterEquipamento
 {
-    public partial class DeleteProfessor : Form
+    public partial class MenuManterEquipamento : Form
     {
-        public DeleteProfessor()
+        public MenuManterEquipamento()
         {
             InitializeComponent();
         }

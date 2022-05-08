@@ -16,5 +16,10 @@ namespace ReservaEquipamento.Telas.ManterEquipamento
         {
             InitializeComponent();
         }
+
+        private void ReadAllEquipamentos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

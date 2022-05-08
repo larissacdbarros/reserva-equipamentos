@@ -16,5 +16,10 @@ namespace ReservaEquipamento.Telas.ManterProfessor
         {
             InitializeComponent();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

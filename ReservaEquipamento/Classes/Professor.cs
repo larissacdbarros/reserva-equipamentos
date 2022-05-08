@@ -10,7 +10,10 @@ namespace ReservaEquipamento.Classes
     {
         public string Nome{ get; set; }
         public string Cpf { get; set; }
-        public string disciplina { get; set; }  
+        public string disciplina { get; set; }
+        public bool IsCoordenador { get; set; }
         //login e senha
+        //ID??
     }
+
 }

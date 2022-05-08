@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ReservaEquipamento.Telas.ManterProfessor
 {
-    public partial class UpdateProfessor : Form
+    public partial class MenuManterProfessor : Form
     {
-        public UpdateProfessor()
+        public MenuManterProfessor()
         {
             InitializeComponent();
+        }
+
+        private void MenuManterProfessor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

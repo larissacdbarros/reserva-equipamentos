@@ -10,6 +10,7 @@ namespace ReservaEquipamento.Classes
     {
         public  int Id{ get; set; }
         public string Nome { get; set; }
+        public int QtdEquipamento { get; set; }
         public bool IsReservado { get; set; }
        
     }
