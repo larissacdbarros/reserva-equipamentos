@@ -8,5 +8,6 @@ namespace ReservaEquipamento.Classes.Service
 {
     internal class ProfessorService
     {
+        //REGRAS DE NEGÓCIO
     }
 }

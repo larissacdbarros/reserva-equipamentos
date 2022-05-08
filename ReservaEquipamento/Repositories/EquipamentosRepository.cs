@@ -8,5 +8,6 @@ namespace ReservaEquipamento.Classes
 {
     internal class EquipamentosRepository
     {
+        //emula o BD
     }
 }

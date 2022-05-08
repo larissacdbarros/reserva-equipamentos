@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,28 +61,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Agenda.cs" />
-    <Compile Include="Classes\Coordenador.cs" />
     <Compile Include="Classes\Equipamento.cs" />
+    <Compile Include="Repositories\EquipamentosRepository.cs" />
     <Compile Include="Classes\Professor.cs" />
+    <Compile Include="Repositories\ProfessorRepository.cs" />
+    <Compile Include="Repositories\ReservaEquipamentoRepository.cs" />
+    <Compile Include="Service\ReservaEquipamentoService.cs" />
     <Compile Include="Classes\ReservaEquipamento.cs" />
+    <Compile Include="Service\EquipamentoService.cs" />
+    <Compile Include="Service\ProfessorService.cs" />
     <Compile Include="Telas\ManterEquipamento\CreateEquipamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\ManterEquipamento\CreateEquipamento.Designer.cs">
       <DependentUpon>CreateEquipamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\ManterEquipamento\DeleteEquipamento.cs">
+    <Compile Include="Telas\ManterEquipamento\MenuManterEquipamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\ManterEquipamento\DeleteEquipamento.Designer.cs">
-      <DependentUpon>DeleteEquipamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\ManterEquipamento\UpdateEquipamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\ManterEquipamento\UpdateEquipamento.Designer.cs">
-      <DependentUpon>UpdateEquipamento.cs</DependentUpon>
+    <Compile Include="Telas\ManterEquipamento\MenuManterEquipamento.Designer.cs">
+      <DependentUpon>MenuManterEquipamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\ManterEquipamento\ReadAllEquipamentos.cs">
       <SubType>Form</SubType>
@@ -75,11 +88,23 @@
     <Compile Include="Telas\ManterEquipamento\ReadAllEquipamentos.Designer.cs">
       <DependentUpon>ReadAllEquipamentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\ReservarEquipamento\CreateReserva\ConfirmarReserva.cs">
+    <Compile Include="Telas\ManterProfessor\CreateProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\ReservarEquipamento\CreateReserva\ConfirmarReserva.Designer.cs">
-      <DependentUpon>ConfirmarReserva.cs</DependentUpon>
+    <Compile Include="Telas\ManterProfessor\CreateProfessor.Designer.cs">
+      <DependentUpon>CreateProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ManterProfessor\MenuManterProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ManterProfessor\MenuManterProfessor.Designer.cs">
+      <DependentUpon>MenuManterProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ManterProfessor\ReadAllProfessores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ManterProfessor\ReadAllProfessores.Designer.cs">
+      <DependentUpon>ReadAllProfessores.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Menu.cs">
       <SubType>Form</SubType>
@@ -89,47 +114,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Telas\ReservarEquipamento\CreateReserva\SelecaoDataHorarioReserva.cs">
+    <Compile Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoDataHorarioReserva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\ReservarEquipamento\CreateReserva\SelecaoDataHorarioReserva.Designer.cs">
+    <Compile Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoDataHorarioReserva.Designer.cs">
       <DependentUpon>SelecaoDataHorarioReserva.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\ReservarEquipamento\CreateReserva\SelecaoEquipamentosReserva.cs">
+    <Compile Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoEquipamentosReserva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\ReservarEquipamento\CreateReserva\SelecaoEquipamentosReserva.Designer.cs">
+    <Compile Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoEquipamentosReserva.Designer.cs">
       <DependentUpon>SelecaoEquipamentosReserva.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\ReservarEquipamento\DeleteReserva\DeleteAllReservas.cs">
+    <Compile Include="Telas\MaterReservaEquipamento\ReadReservas\ReadAllReservas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\ReservarEquipamento\DeleteReserva\DeleteAllReservas.Designer.cs">
-      <DependentUpon>DeleteAllReservas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\ReservarEquipamento\DeleteReserva\DeleteReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\ReservarEquipamento\DeleteReserva\DeleteReserva.Designer.cs">
-      <DependentUpon>DeleteReserva.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\ReservarEquipamento\ReadReservas\ReadReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\ReservarEquipamento\ReadReservas\ReadReserva.Designer.cs">
-      <DependentUpon>ReadReserva.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\ReservarEquipamento\ReadReservas\ReadAllReservas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\ReservarEquipamento\ReadReservas\ReadAllReservas.Designer.cs">
+    <Compile Include="Telas\MaterReservaEquipamento\ReadReservas\ReadAllReservas.Designer.cs">
       <DependentUpon>ReadAllReservas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\ReservarEquipamento\UpdateReserva\UpdateReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\ReservarEquipamento\UpdateReserva\UpdateReserva.Designer.cs">
-      <DependentUpon>UpdateReserva.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -140,8 +141,35 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\ManterEquipamento\CreateEquipamento.resx">
+      <DependentUpon>CreateEquipamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ManterEquipamento\MenuManterEquipamento.resx">
+      <DependentUpon>MenuManterEquipamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ManterEquipamento\ReadAllEquipamentos.resx">
+      <DependentUpon>ReadAllEquipamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ManterProfessor\CreateProfessor.resx">
+      <DependentUpon>CreateProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ManterProfessor\MenuManterProfessor.resx">
+      <DependentUpon>MenuManterProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ManterProfessor\ReadAllProfessores.resx">
+      <DependentUpon>ReadAllProfessores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoDataHorarioReserva.resx">
+      <DependentUpon>SelecaoDataHorarioReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoEquipamentosReserva.resx">
+      <DependentUpon>SelecaoEquipamentosReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\MaterReservaEquipamento\ReadReservas\ReadAllReservas.resx">
+      <DependentUpon>ReadAllReservas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -155,6 +183,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

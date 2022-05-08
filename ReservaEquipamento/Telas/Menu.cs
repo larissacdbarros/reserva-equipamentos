@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ReservaEquipamento
 {
-    public partial class Menu : Form
+    public partial class MenuManterEquipamento : Form
     {
-        public Menu()
+        public MenuManterEquipamento()
         {
             InitializeComponent();
+        }
+
+        private void btnNovaReserva_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

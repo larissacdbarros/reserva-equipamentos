@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ReservaEquipamento.Telas.ReservarEquipamento.UpdateReserva
+namespace ReservaEquipamento.Telas.ManterEquipamento
 {
-    public partial class UpdateReserva : Form
+    public partial class MenuManterEquipamento : Form
     {
-        public UpdateReserva()
+        public MenuManterEquipamento()
         {
             InitializeComponent();
         }
