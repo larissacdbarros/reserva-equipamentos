@@ -33,31 +33,32 @@
             this.btnEditarEquipamento = new System.Windows.Forms.Button();
             this.listBoxListaReservas = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRetornar
             // 
-            this.btnRetornar.Location = new System.Drawing.Point(559, 285);
+            this.btnRetornar.Location = new System.Drawing.Point(559, 192);
             this.btnRetornar.Name = "btnRetornar";
-            this.btnRetornar.Size = new System.Drawing.Size(120, 26);
+            this.btnRetornar.Size = new System.Drawing.Size(152, 26);
             this.btnRetornar.TabIndex = 17;
             this.btnRetornar.Text = "RETORNAR";
             this.btnRetornar.UseVisualStyleBackColor = true;
             // 
             // btnExcluirEquipamento
             // 
-            this.btnExcluirEquipamento.Location = new System.Drawing.Point(559, 253);
+            this.btnExcluirEquipamento.Location = new System.Drawing.Point(559, 256);
             this.btnExcluirEquipamento.Name = "btnExcluirEquipamento";
-            this.btnExcluirEquipamento.Size = new System.Drawing.Size(120, 26);
+            this.btnExcluirEquipamento.Size = new System.Drawing.Size(152, 26);
             this.btnExcluirEquipamento.TabIndex = 15;
             this.btnExcluirEquipamento.Text = "EXCLUIR";
             this.btnExcluirEquipamento.UseVisualStyleBackColor = true;
             // 
             // btnEditarEquipamento
             // 
-            this.btnEditarEquipamento.Location = new System.Drawing.Point(559, 221);
+            this.btnEditarEquipamento.Location = new System.Drawing.Point(559, 224);
             this.btnEditarEquipamento.Name = "btnEditarEquipamento";
-            this.btnEditarEquipamento.Size = new System.Drawing.Size(120, 26);
+            this.btnEditarEquipamento.Size = new System.Drawing.Size(152, 26);
             this.btnEditarEquipamento.TabIndex = 16;
             this.btnEditarEquipamento.Text = "EDITAR";
             this.btnEditarEquipamento.UseVisualStyleBackColor = true;
@@ -81,12 +82,22 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "MINHAS RESERVAS";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(559, 288);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 48);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "EXCLUIR TODAS \r\nAS RESERVAS";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // ReadAllReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 480);
             this.Controls.Add(this.btnRetornar);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnExcluirEquipamento);
             this.Controls.Add(this.btnEditarEquipamento);
             this.Controls.Add(this.listBoxListaReservas);
@@ -107,5 +118,6 @@
         private System.Windows.Forms.Button btnEditarEquipamento;
         private System.Windows.Forms.ListBox listBoxListaReservas;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

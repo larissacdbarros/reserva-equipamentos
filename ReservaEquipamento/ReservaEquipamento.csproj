@@ -106,12 +106,6 @@
     <Compile Include="Telas\ManterProfessor\ReadAllProfessores.Designer.cs">
       <DependentUpon>ReadAllProfessores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\CreateReserva\ConfirmarReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\CreateReserva\ConfirmarReserva.Designer.cs">
-      <DependentUpon>ConfirmarReserva.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,35 +126,11 @@
     <Compile Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoEquipamentosReserva.Designer.cs">
       <DependentUpon>SelecaoEquipamentosReserva.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\DeleteReserva\DeleteAllReservas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\DeleteReserva\DeleteAllReservas.Designer.cs">
-      <DependentUpon>DeleteAllReservas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\DeleteReserva\DeleteReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\DeleteReserva\DeleteReserva.Designer.cs">
-      <DependentUpon>DeleteReserva.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\ReadReservas\ReadReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\ReadReservas\ReadReserva.Designer.cs">
-      <DependentUpon>ReadReserva.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\MaterReservaEquipamento\ReadReservas\ReadAllReservas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\MaterReservaEquipamento\ReadReservas\ReadAllReservas.Designer.cs">
       <DependentUpon>ReadAllReservas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\UpdateReserva\UpdateReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\UpdateReserva\UpdateReserva.Designer.cs">
-      <DependentUpon>UpdateReserva.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -192,29 +162,14 @@
     <EmbeddedResource Include="Telas\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\MaterReservaEquipamento\CreateReserva\ConfirmarReserva.resx">
-      <DependentUpon>ConfirmarReserva.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoDataHorarioReserva.resx">
       <DependentUpon>SelecaoDataHorarioReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoEquipamentosReserva.resx">
       <DependentUpon>SelecaoEquipamentosReserva.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\MaterReservaEquipamento\DeleteReserva\DeleteAllReservas.resx">
-      <DependentUpon>DeleteAllReservas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\MaterReservaEquipamento\DeleteReserva\DeleteReserva.resx">
-      <DependentUpon>DeleteReserva.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\MaterReservaEquipamento\ReadReservas\ReadAllReservas.resx">
       <DependentUpon>ReadAllReservas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\MaterReservaEquipamento\ReadReservas\ReadReserva.resx">
-      <DependentUpon>ReadReserva.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\MaterReservaEquipamento\UpdateReserva\UpdateReserva.resx">
-      <DependentUpon>UpdateReserva.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
