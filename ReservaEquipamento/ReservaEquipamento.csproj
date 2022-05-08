@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{917B5500-9287-4EC7-9A1B-05BBB8DC0416}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ReservaEquipamento</RootNamespace>
+    <AssemblyName>ReservaEquipamento</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Agenda.cs" />
+    <Compile Include="Classes\Coordenador.cs" />
+    <Compile Include="Classes\Equipamento.cs" />
+    <Compile Include="Classes\Professor.cs" />
+    <Compile Include="Classes\ReservaEquipamento.cs" />
+    <Compile Include="Telas\ManterEquipamento\CreateEquipamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ManterEquipamento\CreateEquipamento.Designer.cs">
+      <DependentUpon>CreateEquipamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ManterEquipamento\DeleteEquipamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ManterEquipamento\DeleteEquipamento.Designer.cs">
+      <DependentUpon>DeleteEquipamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ManterEquipamento\UpdateEquipamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ManterEquipamento\UpdateEquipamento.Designer.cs">
+      <DependentUpon>UpdateEquipamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ManterEquipamento\ReadAllEquipamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ManterEquipamento\ReadAllEquipamentos.Designer.cs">
+      <DependentUpon>ReadAllEquipamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\CreateReserva\ConfirmarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\CreateReserva\ConfirmarReserva.Designer.cs">
+      <DependentUpon>ConfirmarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\ReservarEquipamento\CreateReserva\SelecaoDataHorarioReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\CreateReserva\SelecaoDataHorarioReserva.Designer.cs">
+      <DependentUpon>SelecaoDataHorarioReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\CreateReserva\SelecaoEquipamentosReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\CreateReserva\SelecaoEquipamentosReserva.Designer.cs">
+      <DependentUpon>SelecaoEquipamentosReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\DeleteReserva\DeleteAllReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\DeleteReserva\DeleteAllReservas.Designer.cs">
+      <DependentUpon>DeleteAllReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\DeleteReserva\DeleteReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\DeleteReserva\DeleteReserva.Designer.cs">
+      <DependentUpon>DeleteReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\ReadReservas\ReadReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\ReadReservas\ReadReserva.Designer.cs">
+      <DependentUpon>ReadReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\ReadReservas\ReadAllReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\ReadReservas\ReadAllReservas.Designer.cs">
+      <DependentUpon>ReadAllReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\UpdateReserva\UpdateReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ReservarEquipamento\UpdateReserva\UpdateReserva.Designer.cs">
+      <DependentUpon>UpdateReserva.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Telas\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
