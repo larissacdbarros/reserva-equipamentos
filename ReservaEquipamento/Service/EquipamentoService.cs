@@ -7,7 +7,25 @@ using System.Threading.Tasks;
 namespace ReservaEquipamento.Classes.Service
 {
     internal class EquipamentoService
-    {
-        //REGRAS DE NEGÓCIO
+    {   
+        //public static EquipamentosRepository Equipamentos { get; set; }
+
+        //public EquipamentoService()
+        //{
+        //    if (Equipamentos == null)
+        //    {
+        //        Equipamentos = new EquipamentosRepository();
+        //    }
+        //}
+
+        ////REGRAS DE NEGÓCIO
+        //public void CreateEquipamento()
+        //{
+
+        //}
+        //public List<Equipamento> ReadAllEquipamento()
+        //{
+        //    return Equipamentos.ReadAllEquipamento();
+        //}
     }
 }

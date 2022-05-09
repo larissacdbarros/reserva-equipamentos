@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReservaEquipamento.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,17 @@ namespace ReservaEquipamento.Telas.ManterProfessor
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReadAllProfessores_Load(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void btnEditarEquipamento_Click(object sender, EventArgs e)
         {
 
         }

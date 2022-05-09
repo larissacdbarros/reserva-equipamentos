@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnMinhasReservas = new System.Windows.Forms.Button();
-            this.btnNovaReserva = new System.Windows.Forms.Button();
+            this.btnAddEquipamento = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -52,16 +52,18 @@
             this.btnMinhasReservas.TabIndex = 3;
             this.btnMinhasReservas.Text = "LISTAR EQUIPAMENTOS";
             this.btnMinhasReservas.UseVisualStyleBackColor = true;
+            this.btnMinhasReservas.Click += new System.EventHandler(this.btnMinhasReservas_Click);
             // 
-            // btnNovaReserva
+            // btnAddEquipamento
             // 
-            this.btnNovaReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovaReserva.Location = new System.Drawing.Point(238, 153);
-            this.btnNovaReserva.Name = "btnNovaReserva";
-            this.btnNovaReserva.Size = new System.Drawing.Size(258, 43);
-            this.btnNovaReserva.TabIndex = 4;
-            this.btnNovaReserva.Text = "ADICIONAR EQUIPAMENTO";
-            this.btnNovaReserva.UseVisualStyleBackColor = true;
+            this.btnAddEquipamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEquipamento.Location = new System.Drawing.Point(238, 153);
+            this.btnAddEquipamento.Name = "btnAddEquipamento";
+            this.btnAddEquipamento.Size = new System.Drawing.Size(258, 43);
+            this.btnAddEquipamento.TabIndex = 4;
+            this.btnAddEquipamento.Text = "ADICIONAR EQUIPAMENTO";
+            this.btnAddEquipamento.UseVisualStyleBackColor = true;
+            this.btnAddEquipamento.Click += new System.EventHandler(this.btnNovaReserva_Click);
             // 
             // MenuManterEquipamento
             // 
@@ -70,11 +72,13 @@
             this.ClientSize = new System.Drawing.Size(800, 480);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMinhasReservas);
-            this.Controls.Add(this.btnNovaReserva);
+            this.Controls.Add(this.btnAddEquipamento);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MenuManterEquipamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuManterEquipamento";
+            this.Load += new System.EventHandler(this.MenuManterEquipamento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,6 +88,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMinhasReservas;
-        private System.Windows.Forms.Button btnNovaReserva;
+        private System.Windows.Forms.Button btnAddEquipamento;
     }
 }

@@ -9,3 +9,12 @@ D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermedi
 D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.exe
 D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.pdb
 D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Menu.resources
+D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Telas.ManterEquipamento.CreateEquipamento.resources
+D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Telas.ManterEquipamento.MenuManterEquipamento.resources
+D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Telas.ManterEquipamento.ReadAllEquipamentos.resources
+D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Telas.ManterProfessor.CreateProfessor.resources
+D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Telas.ManterProfessor.MenuManterProfessor.resources
+D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Telas.ManterProfessor.ReadAllProfessores.resources
+D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Telas.MaterReservaEquipamento.ReadReserva.ReadAllReservas.resources
+D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Telas.SelecaoDataHorarioReserva.resources
+D:\Documents\Cast\Turma de formação .Net\CSharpIntermediário\CSharp-Intermediário\ReservaEquipamento\ReservaEquipamento\obj\Debug\ReservaEquipamento.Telas.SelecaoEquipamentosReserva.resources

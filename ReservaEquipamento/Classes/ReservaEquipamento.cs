@@ -9,6 +9,7 @@ namespace ReservaEquipamento.Classes
     internal class ReservaEquipamento
     {
         public int Id { get; set; }
+        //a cada equipamento cadastrado Id++
         public Professor Professor { get; set; }
         public List<Equipamento> Equipamentos { get; set; }
         public DateTime DataHora { get; set; }

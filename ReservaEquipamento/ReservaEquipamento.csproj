@@ -106,10 +106,16 @@
     <Compile Include="Telas\ManterProfessor\ReadAllProfessores.Designer.cs">
       <DependentUpon>ReadAllProfessores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Menu.cs">
+    <Compile Include="Telas\MaterReservaEquipamento\ReadReserva\ReadAllReservas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Menu.Designer.cs">
+    <Compile Include="Telas\MaterReservaEquipamento\ReadReserva\ReadAllReservas.Designer.cs">
+      <DependentUpon>ReadAllReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -125,12 +131,6 @@
     </Compile>
     <Compile Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoEquipamentosReserva.Designer.cs">
       <DependentUpon>SelecaoEquipamentosReserva.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\ReadReservas\ReadAllReservas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\MaterReservaEquipamento\ReadReservas\ReadAllReservas.Designer.cs">
-      <DependentUpon>ReadAllReservas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,7 +159,10 @@
     <EmbeddedResource Include="Telas\ManterProfessor\ReadAllProfessores.resx">
       <DependentUpon>ReadAllProfessores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Menu.resx">
+    <EmbeddedResource Include="Telas\MaterReservaEquipamento\ReadReserva\ReadAllReservas.resx">
+      <DependentUpon>ReadAllReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoDataHorarioReserva.resx">
@@ -167,9 +170,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\MaterReservaEquipamento\CreateReserva\SelecaoEquipamentosReserva.resx">
       <DependentUpon>SelecaoEquipamentosReserva.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\MaterReservaEquipamento\ReadReservas\ReadAllReservas.resx">
-      <DependentUpon>ReadAllReservas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

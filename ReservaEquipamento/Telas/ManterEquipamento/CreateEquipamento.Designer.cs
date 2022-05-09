@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtQuantidadeEquipamento = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblErro = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -64,6 +63,7 @@
             this.btnConfirmar.TabIndex = 2;
             this.btnConfirmar.Text = "CONFIRMAR";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // label2
             // 
@@ -91,16 +91,6 @@
             this.txtQuantidadeEquipamento.Size = new System.Drawing.Size(114, 26);
             this.txtQuantidadeEquipamento.TabIndex = 1;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 270);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(249, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "tentar gerar o id automaticamente";
-            this.label4.Click += new System.EventHandler(this.label1_Click);
-            // 
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(560, 220);
@@ -109,6 +99,7 @@
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lblErro
             // 
@@ -131,12 +122,13 @@
             this.Controls.Add(this.txtQuantidadeEquipamento);
             this.Controls.Add(this.txtNomeEquipamento);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CreateEquipamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateEquipamento";
+            this.Load += new System.EventHandler(this.CreateEquipamento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,7 +142,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtQuantidadeEquipamento;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblErro;
     }

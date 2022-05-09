@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ReservaEquipamento
+namespace ReservaEquipamento.Telas.MaterReservaEquipamento.ReadReserva
 {
-    public partial class MenuManterEquipamento : Form
+    public partial class ReadAllReservas : Form
     {
-        public MenuManterEquipamento()
+        public ReadAllReservas()
         {
             InitializeComponent();
-        }
-
-        private void btnNovaReserva_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

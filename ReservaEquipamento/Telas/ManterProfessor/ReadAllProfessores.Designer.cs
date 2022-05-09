@@ -52,6 +52,7 @@
             this.btnEditarEquipamento.TabIndex = 11;
             this.btnEditarEquipamento.Text = "EDITAR";
             this.btnEditarEquipamento.UseVisualStyleBackColor = true;
+            this.btnEditarEquipamento.Click += new System.EventHandler(this.btnEditarEquipamento_Click);
             // 
             // listBoxListaProfessores
             // 
@@ -96,6 +97,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ReadAllProfessores";
             this.Text = "ReadAllProfessores";
+            this.Load += new System.EventHandler(this.ReadAllProfessores_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

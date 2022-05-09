@@ -1,6 +1,6 @@
 ﻿namespace ReservaEquipamento
 {
-    partial class MenuManterEquipamento
+    partial class Menu
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -44,12 +44,11 @@
             this.btnNovaReserva.TabIndex = 0;
             this.btnNovaReserva.Text = "NOVA RESERVA";
             this.btnNovaReserva.UseVisualStyleBackColor = true;
-            this.btnNovaReserva.Click += new System.EventHandler(this.btnNovaReserva_Click);
             // 
             // btnMinhasReservas
             // 
             this.btnMinhasReservas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinhasReservas.Location = new System.Drawing.Point(254, 220);
+            this.btnMinhasReservas.Location = new System.Drawing.Point(254, 215);
             this.btnMinhasReservas.Name = "btnMinhasReservas";
             this.btnMinhasReservas.Size = new System.Drawing.Size(227, 43);
             this.btnMinhasReservas.TabIndex = 0;
@@ -65,6 +64,7 @@
             this.btnManterEquipamento.TabIndex = 0;
             this.btnManterEquipamento.Text = "MANTER EQUIPAMENTO";
             this.btnManterEquipamento.UseVisualStyleBackColor = true;
+            this.btnManterEquipamento.Click += new System.EventHandler(this.btnManterEquipamento_Click);
             // 
             // label1
             // 
@@ -86,7 +86,7 @@
             this.button1.Text = "MANTER PROFESSOR";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // MenuManterEquipamento
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -98,8 +98,10 @@
             this.Controls.Add(this.btnNovaReserva);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "MenuManterEquipamento";
+            this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

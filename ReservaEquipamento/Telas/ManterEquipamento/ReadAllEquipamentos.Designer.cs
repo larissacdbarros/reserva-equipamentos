@@ -54,6 +54,7 @@
             this.listBoxListaEquipamentos.Name = "listBoxListaEquipamentos";
             this.listBoxListaEquipamentos.Size = new System.Drawing.Size(309, 324);
             this.listBoxListaEquipamentos.TabIndex = 5;
+            this.listBoxListaEquipamentos.SelectedIndexChanged += new System.EventHandler(this.listBoxListaEquipamentos_SelectedIndexChanged);
             // 
             // btnExcluirEquipamento
             // 
@@ -72,6 +73,7 @@
             this.btnEditarEquipamento.TabIndex = 7;
             this.btnEditarEquipamento.Text = "EDITAR";
             this.btnEditarEquipamento.UseVisualStyleBackColor = true;
+            this.btnEditarEquipamento.Click += new System.EventHandler(this.btnEditarEquipamento_Click);
             // 
             // button1
             // 
@@ -81,15 +83,17 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "EXCLUIR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnRetornar
             // 
             this.btnRetornar.Location = new System.Drawing.Point(502, 261);
             this.btnRetornar.Name = "btnRetornar";
             this.btnRetornar.Size = new System.Drawing.Size(120, 26);
-            this.btnRetornar.TabIndex = 6;
+            this.btnRetornar.TabIndex = 13;
             this.btnRetornar.Text = "RETORNAR";
             this.btnRetornar.UseVisualStyleBackColor = true;
+            this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
             // 
             // ReadAllEquipamentos
             // 
@@ -105,6 +109,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ReadAllEquipamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarEquipamentos";
             this.Load += new System.EventHandler(this.ReadAllEquipamentos_Load);
             this.ResumeLayout(false);
@@ -115,10 +120,10 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListBox listBoxListaEquipamentos;
         private System.Windows.Forms.Button btnExcluirEquipamento;
         private System.Windows.Forms.Button btnEditarEquipamento;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.ListBox listBoxListaEquipamentos;
         private System.Windows.Forms.Button btnRetornar;
     }
 }
