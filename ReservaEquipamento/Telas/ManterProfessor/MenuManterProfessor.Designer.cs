@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnMinhasReservas = new System.Windows.Forms.Button();
-            this.btnNovaReserva = new System.Windows.Forms.Button();
+            this.btnListarProfessores = new System.Windows.Forms.Button();
+            this.btnCadastrarProfessor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,25 +43,27 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "MENU PROFESSOR";
             // 
-            // btnMinhasReservas
+            // btnListarProfessores
             // 
-            this.btnMinhasReservas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinhasReservas.Location = new System.Drawing.Point(246, 241);
-            this.btnMinhasReservas.Name = "btnMinhasReservas";
-            this.btnMinhasReservas.Size = new System.Drawing.Size(258, 43);
-            this.btnMinhasReservas.TabIndex = 6;
-            this.btnMinhasReservas.Text = "LISTAR PROFESSORES";
-            this.btnMinhasReservas.UseVisualStyleBackColor = true;
+            this.btnListarProfessores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarProfessores.Location = new System.Drawing.Point(246, 241);
+            this.btnListarProfessores.Name = "btnListarProfessores";
+            this.btnListarProfessores.Size = new System.Drawing.Size(258, 43);
+            this.btnListarProfessores.TabIndex = 6;
+            this.btnListarProfessores.Text = "LISTAR PROFESSORES";
+            this.btnListarProfessores.UseVisualStyleBackColor = true;
+            this.btnListarProfessores.Click += new System.EventHandler(this.btnListarProfessores_Click);
             // 
-            // btnNovaReserva
+            // btnCadastrarProfessor
             // 
-            this.btnNovaReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovaReserva.Location = new System.Drawing.Point(244, 177);
-            this.btnNovaReserva.Name = "btnNovaReserva";
-            this.btnNovaReserva.Size = new System.Drawing.Size(258, 43);
-            this.btnNovaReserva.TabIndex = 7;
-            this.btnNovaReserva.Text = "CADASTRAR PROFESSOR";
-            this.btnNovaReserva.UseVisualStyleBackColor = true;
+            this.btnCadastrarProfessor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarProfessor.Location = new System.Drawing.Point(244, 177);
+            this.btnCadastrarProfessor.Name = "btnCadastrarProfessor";
+            this.btnCadastrarProfessor.Size = new System.Drawing.Size(258, 43);
+            this.btnCadastrarProfessor.TabIndex = 7;
+            this.btnCadastrarProfessor.Text = "CADASTRAR PROFESSOR";
+            this.btnCadastrarProfessor.UseVisualStyleBackColor = true;
+            this.btnCadastrarProfessor.Click += new System.EventHandler(this.btnCadastrarProfessor_Click);
             // 
             // MenuManterProfessor
             // 
@@ -69,8 +71,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 480);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnMinhasReservas);
-            this.Controls.Add(this.btnNovaReserva);
+            this.Controls.Add(this.btnListarProfessores);
+            this.Controls.Add(this.btnCadastrarProfessor);
             this.Name = "MenuManterProfessor";
             this.Text = "MenuManterProfessor";
             this.Load += new System.EventHandler(this.MenuManterProfessor_Load);
@@ -82,7 +84,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnMinhasReservas;
-        private System.Windows.Forms.Button btnNovaReserva;
+        private System.Windows.Forms.Button btnListarProfessores;
+        private System.Windows.Forms.Button btnCadastrarProfessor;
     }
 }

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using ReservaEquipamento.Telas.ManterProfessor;
 
 namespace ReservaEquipamento
 {
@@ -28,7 +30,16 @@ namespace ReservaEquipamento
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MenuManterProfessor menuProfessor = new MenuManterProfessor();
+            menuProfessor.Tag = this;
+            menuProfessor.Show(this);
+            this.Hide();
         }
     }
 }

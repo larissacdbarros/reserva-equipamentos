@@ -32,28 +32,30 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.txtQuantidadeEquipamento = new System.Windows.Forms.TextBox();
-            this.txtNomeEquipamento = new System.Windows.Forms.TextBox();
+            this.txtCPFProfessor = new System.Windows.Forms.TextBox();
+            this.txtNomeProfessor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDisciplinaProfessor = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtUsuarioProfessor = new System.Windows.Forms.TextBox();
+            this.txtSenhaProfessor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtSenhaConfirmaProfessor = new System.Windows.Forms.TextBox();
+            this.rbSim = new System.Windows.Forms.RadioButton();
+            this.rbNao = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // lblErro
             // 
             this.lblErro.AutoSize = true;
-            this.lblErro.Location = new System.Drawing.Point(128, 385);
+            this.lblErro.Location = new System.Drawing.Point(88, 366);
             this.lblErro.Name = "lblErro";
-            this.lblErro.Size = new System.Drawing.Size(321, 20);
+            this.lblErro.Size = new System.Drawing.Size(155, 20);
             this.lblErro.TabIndex = 13;
-            this.lblErro.Text = "exibe mensagem caso haja erro no cadastro";
+            this.lblErro.Text = "É um administrador?";
             // 
             // label3
             // 
@@ -73,6 +75,7 @@
             this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnConfirmar
             // 
@@ -82,20 +85,21 @@
             this.btnConfirmar.TabIndex = 11;
             this.btnConfirmar.Text = "CONFIRMAR";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
-            // txtQuantidadeEquipamento
+            // txtCPFProfessor
             // 
-            this.txtQuantidadeEquipamento.Location = new System.Drawing.Point(92, 225);
-            this.txtQuantidadeEquipamento.Name = "txtQuantidadeEquipamento";
-            this.txtQuantidadeEquipamento.Size = new System.Drawing.Size(326, 26);
-            this.txtQuantidadeEquipamento.TabIndex = 8;
+            this.txtCPFProfessor.Location = new System.Drawing.Point(92, 225);
+            this.txtCPFProfessor.Name = "txtCPFProfessor";
+            this.txtCPFProfessor.Size = new System.Drawing.Size(326, 26);
+            this.txtCPFProfessor.TabIndex = 8;
             // 
-            // txtNomeEquipamento
+            // txtNomeProfessor
             // 
-            this.txtNomeEquipamento.Location = new System.Drawing.Point(92, 145);
-            this.txtNomeEquipamento.Name = "txtNomeEquipamento";
-            this.txtNomeEquipamento.Size = new System.Drawing.Size(326, 26);
-            this.txtNomeEquipamento.TabIndex = 9;
+            this.txtNomeProfessor.Location = new System.Drawing.Point(92, 145);
+            this.txtNomeProfessor.Name = "txtNomeProfessor";
+            this.txtNomeProfessor.Size = new System.Drawing.Size(326, 26);
+            this.txtNomeProfessor.TabIndex = 9;
             // 
             // label2
             // 
@@ -124,12 +128,12 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "DISCIPLINA";
             // 
-            // textBox1
+            // txtDisciplinaProfessor
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 305);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(326, 26);
-            this.textBox1.TabIndex = 8;
+            this.txtDisciplinaProfessor.Location = new System.Drawing.Point(92, 305);
+            this.txtDisciplinaProfessor.Name = "txtDisciplinaProfessor";
+            this.txtDisciplinaProfessor.Size = new System.Drawing.Size(326, 26);
+            this.txtDisciplinaProfessor.TabIndex = 8;
             // 
             // label6
             // 
@@ -149,19 +153,19 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "USUÁRIO";
             // 
-            // textBox2
+            // txtUsuarioProfessor
             // 
-            this.textBox2.Location = new System.Drawing.Point(455, 145);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 26);
-            this.textBox2.TabIndex = 9;
+            this.txtUsuarioProfessor.Location = new System.Drawing.Point(455, 145);
+            this.txtUsuarioProfessor.Name = "txtUsuarioProfessor";
+            this.txtUsuarioProfessor.Size = new System.Drawing.Size(243, 26);
+            this.txtUsuarioProfessor.TabIndex = 9;
             // 
-            // textBox3
+            // txtSenhaProfessor
             // 
-            this.textBox3.Location = new System.Drawing.Point(455, 225);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 26);
-            this.textBox3.TabIndex = 8;
+            this.txtSenhaProfessor.Location = new System.Drawing.Point(455, 225);
+            this.txtSenhaProfessor.Name = "txtSenhaProfessor";
+            this.txtSenhaProfessor.Size = new System.Drawing.Size(243, 26);
+            this.txtSenhaProfessor.TabIndex = 8;
             // 
             // label7
             // 
@@ -172,29 +176,55 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "CONFIRMAR SENHA";
             // 
-            // textBox4
+            // txtSenhaConfirmaProfessor
             // 
-            this.textBox4.Location = new System.Drawing.Point(455, 305);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(243, 26);
-            this.textBox4.TabIndex = 8;
+            this.txtSenhaConfirmaProfessor.Location = new System.Drawing.Point(455, 305);
+            this.txtSenhaConfirmaProfessor.Name = "txtSenhaConfirmaProfessor";
+            this.txtSenhaConfirmaProfessor.Size = new System.Drawing.Size(243, 26);
+            this.txtSenhaConfirmaProfessor.TabIndex = 8;
+            // 
+            // rbSim
+            // 
+            this.rbSim.AutoSize = true;
+            this.rbSim.Location = new System.Drawing.Point(92, 398);
+            this.rbSim.Name = "rbSim";
+            this.rbSim.Size = new System.Drawing.Size(54, 24);
+            this.rbSim.TabIndex = 14;
+            this.rbSim.TabStop = true;
+            this.rbSim.Text = "Sim";
+            this.rbSim.UseVisualStyleBackColor = true;
+            this.rbSim.CheckedChanged += new System.EventHandler(this.rbSim_CheckedChanged);
+            // 
+            // rbNao
+            // 
+            this.rbNao.AutoSize = true;
+            this.rbNao.Location = new System.Drawing.Point(187, 398);
+            this.rbNao.Name = "rbNao";
+            this.rbNao.Size = new System.Drawing.Size(56, 24);
+            this.rbNao.TabIndex = 14;
+            this.rbNao.TabStop = true;
+            this.rbNao.Text = "Não";
+            this.rbNao.UseVisualStyleBackColor = true;
+            this.rbNao.CheckedChanged += new System.EventHandler(this.rbNao_CheckedChanged);
             // 
             // CreateProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 480);
+            this.Controls.Add(this.rbNao);
+            this.Controls.Add(this.rbSim);
             this.Controls.Add(this.lblErro);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txtQuantidadeEquipamento);
+            this.Controls.Add(this.txtDisciplinaProfessor);
+            this.Controls.Add(this.txtSenhaConfirmaProfessor);
+            this.Controls.Add(this.txtSenhaProfessor);
+            this.Controls.Add(this.txtUsuarioProfessor);
+            this.Controls.Add(this.txtCPFProfessor);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtNomeEquipamento);
+            this.Controls.Add(this.txtNomeProfessor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -215,17 +245,19 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.TextBox txtQuantidadeEquipamento;
-        private System.Windows.Forms.TextBox txtNomeEquipamento;
+        private System.Windows.Forms.TextBox txtCPFProfessor;
+        private System.Windows.Forms.TextBox txtNomeProfessor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDisciplinaProfessor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtUsuarioProfessor;
+        private System.Windows.Forms.TextBox txtSenhaProfessor;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtSenhaConfirmaProfessor;
+        private System.Windows.Forms.RadioButton rbSim;
+        private System.Windows.Forms.RadioButton rbNao;
     }
 }

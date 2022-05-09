@@ -11,39 +11,8 @@ namespace ReservaEquipamento.Classes
     internal class EquipamentosRepository
     {
         
-        public static string Diretorio { get; set; }
-        public static string NomeArquivo { get; set; }
+        Config config = new Config("\\equipamento-repository.txt");
         
-        
-        
-        public EquipamentosRepository()
-        {
-            Diretorio = @"C:\SistemaReserva";
-            NomeArquivo = "\\equipamento-repository.txt";
-            CreateDiretorioArquivo();
-           
-        }
-
-        public void CreateDiretorioArquivo()
-        {
-            
-
-
-            if (!Directory.Exists(Diretorio))
-            {
-                Directory.CreateDirectory(Diretorio);
-
-            }
-
-            if (!File.Exists(Diretorio + NomeArquivo))
-            {
-                File.CreateText(Diretorio + NomeArquivo);
-            }
-
-            //messagebox pra quando nao tiver equipamentos
-
-        }
-
         public void CreateEquipamento(string nome, int quantidade)
         {
             
@@ -58,23 +27,18 @@ namespace ReservaEquipamento.Classes
             }
             Equipamento equipamento = new Equipamento(maxId + 1, nome, quantidade);
 
-
-            StreamWriter e  = File.AppendText(Diretorio + NomeArquivo);
+            StreamWriter e  = File.AppendText(config.Diretorio + config.Arquivo);
             e.WriteLine($"{equipamento.Id}-{equipamento.Nome}-{equipamento.QtdEquipamento}");
             e.Close();
 
-            
-            
-            
+           
         }
 
         public List<Equipamento> ReadAllEquipamento ()
         {
             List<Equipamento> listaEquipamento = new List<Equipamento>();
-                       
-            
-            string[] lines = File.ReadAllLines(Diretorio + NomeArquivo );
-
+             
+            string[] lines = File.ReadAllLines(config.Diretorio + config.Arquivo);
 
             foreach (string line in lines)
             {
@@ -109,8 +73,8 @@ namespace ReservaEquipamento.Classes
                 
             }
 
-            File.Delete(Diretorio + NomeArquivo);
-            File.WriteAllLines(Diretorio + NomeArquivo, lines.ToArray());
+            File.Delete(config.Diretorio + config.Arquivo);
+            File.WriteAllLines(config.Diretorio + config.Arquivo, lines.ToArray());
         }
         public void DeleteEquipamento(int id)
         {
@@ -123,8 +87,8 @@ namespace ReservaEquipamento.Classes
                 lines.Add($"{equipamento.Id}-{equipamento.Nome}-{equipamento.QtdEquipamento}");
             }
 
-            File.Delete(Diretorio + NomeArquivo);
-            File.WriteAllLines(Diretorio + NomeArquivo, lines.ToArray());   
+            File.Delete(config.Diretorio + config.Arquivo);
+            File.WriteAllLines(config.Diretorio + config.Arquivo, lines.ToArray());   
         }
 
     }

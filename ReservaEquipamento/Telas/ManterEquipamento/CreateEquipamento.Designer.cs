@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtQuantidadeEquipamento = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.lblErro = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -101,21 +100,11 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // lblErro
-            // 
-            this.lblErro.AutoSize = true;
-            this.lblErro.Location = new System.Drawing.Point(456, 280);
-            this.lblErro.Name = "lblErro";
-            this.lblErro.Size = new System.Drawing.Size(321, 20);
-            this.lblErro.TabIndex = 4;
-            this.lblErro.Text = "exibe mensagem caso haja erro no cadastro";
-            // 
             // CreateEquipamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 480);
-            this.Controls.Add(this.lblErro);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnConfirmar);
@@ -143,6 +132,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtQuantidadeEquipamento;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Label lblErro;
     }
 }

@@ -43,6 +43,7 @@
             this.btnExcluirEquipamento.TabIndex = 10;
             this.btnExcluirEquipamento.Text = "EXCLUIR";
             this.btnExcluirEquipamento.UseVisualStyleBackColor = true;
+            this.btnExcluirEquipamento.Click += new System.EventHandler(this.btnExcluirEquipamento_Click);
             // 
             // btnEditarEquipamento
             // 
@@ -82,6 +83,7 @@
             this.btnRetornar.TabIndex = 12;
             this.btnRetornar.Text = "RETORNAR";
             this.btnRetornar.UseVisualStyleBackColor = true;
+            this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
             // 
             // ReadAllProfessores
             // 
@@ -107,8 +109,8 @@
 
         private System.Windows.Forms.Button btnExcluirEquipamento;
         private System.Windows.Forms.Button btnEditarEquipamento;
-        private System.Windows.Forms.ListBox listBoxListaProfessores;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnRetornar;
+        public System.Windows.Forms.ListBox listBoxListaProfessores;
     }
 }

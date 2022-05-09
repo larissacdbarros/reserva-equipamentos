@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Equipamento.cs" />
+    <Compile Include="Config.cs" />
     <Compile Include="Repositories\EquipamentosRepository.cs" />
     <Compile Include="Classes\Professor.cs" />
     <Compile Include="Repositories\ProfessorRepository.cs" />
